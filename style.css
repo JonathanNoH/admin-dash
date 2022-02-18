@@ -85,6 +85,36 @@ select {
     background-color: var(--main-color);
     grid-row: 1 / span 2;
     color: white;
+    display: grid;
+    grid-template-rows: 4rem;
+    grid-auto-rows: 3rem;
+    
+}
+
+.sidebar>div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.sidebar>div.logo {
+    gap: 10px;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.sidebar img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sidebar .logo img {
+    width: 3rem;
+    height: 3rem;
 }
 
 body {
