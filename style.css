@@ -100,6 +100,12 @@ main {
 header .upper,
 header .lower {
     display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.lower a:first-of-type {
+    margin-left: auto;
 }
 
 header {
