@@ -110,7 +110,7 @@ header a {
     text-decoration: none;
     background-color: var(--main-color);
     color: white;
-    padding: 0.5em 1em;
+    padding: 0.5em 1.5em;
     border-radius: 1em;
     font-weight: 500;
 }
