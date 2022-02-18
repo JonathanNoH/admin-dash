@@ -75,9 +75,42 @@ select {
 
 
 :root {
-    --main-color: #6EE7B7;
+    --main-color: #10B981;
+    --main-color-light: #ECFDF5;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+
 
 .sidebar {
     background-color: var(--main-color);
+    grid-row: 1 / span 2;
+    color: white;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr;
+}
+
+main {
+    background-color: var(--main-color-light);
+}
+
+header .upper,
+header .lower {
+    display: flex;
+}
+
+header {
+    padding: 1.5rem 2.5rem;
+}
+
+header a {
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    font-weight: 500;
 }
