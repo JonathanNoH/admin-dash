@@ -169,15 +169,56 @@ main {
 }
 
 .main-title {
-  grid-column: 1 / span 2;
+  grid-column: 1 / -1;
   font-weight: 500;
   letter-spacing: 1px;
 }
 
 .card {
+  border-left: 0.5rem solid var(--accent-color);
+  padding: 2rem;
+}
+
+.announcements>.container,
+.card {
   background-color: white;
   box-shadow: 2px 2px 5px rgb(184, 184, 184);
   border-radius: 0.5rem;
-  padding: 2rem;
-  border-left: 0.5rem solid var(--accent-color);
+  
 }
+
+.announcements>.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  place-items: center;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.announcements>.container>div:not(:first-child) {
+  padding: 0.5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.an-head,
+.an-body {
+  font-size: 0.75rem;
+}
+
+.an-head {
+  font-weight: 500;
+}
+
+/*.container>div{
+  position: relative;
+}
+
+.container>div:not(:last-child)::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+  opacity: 50%;
+  position: absolute;
+  bottom: 0.25rem
+}*/
