@@ -177,6 +177,8 @@ main {
 .card {
   border-left: 0.5rem solid var(--accent-color);
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-header {
@@ -184,6 +186,12 @@ main {
 }
 .card-content {
   color: rgb(100, 100, 100);
+}
+.card--icons {
+  margin-top: auto;
+  margin-left: auto;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .announcements>.container,
