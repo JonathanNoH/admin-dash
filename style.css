@@ -92,7 +92,7 @@ select {
     
 }
 
-.sidebar>div {
+.sidebar>div>a {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -101,8 +101,12 @@ select {
     font-weight: 500;
     font-size: 1.25rem;
 }
+.sidebar>div>a {
+  text-decoration: none;
+  color: inherit;
+}
 
-.sidebar>div.logo {
+.sidebar>div.logo a {
     gap: 10px;
     margin-left: 1rem;
     font-size: 1.5rem;
