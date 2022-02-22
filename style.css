@@ -73,6 +73,8 @@ select {
   }
 }
 
+/* END RESET */
+
 
 :root {
     --main-color: #10B981;
@@ -81,6 +83,13 @@ select {
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+body {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr;
+}
+
+/* SIDEBAR */
 
 .sidebar {
     background-color: var(--main-color);
@@ -122,15 +131,9 @@ select {
     height: 3rem;
 }
 
-body {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto 1fr;
-}
+/* END SIDEBAR */
 
-main {
-    background-color: var(--main-color-light);
-}
+/* HEADER */
 
 header .upper,
 header .lower {
@@ -156,13 +159,18 @@ header a {
     font-weight: 500;
 }
 
+/* END HEADER */
+
 main {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding: 2.5rem 1.5rem;
   gap: 1rem;
+  background-color: var(--main-color-light);
 }
+
+/* PROJECTS SECTION */
 
 .projects {
   grid-row: 1 / span 2;
@@ -199,6 +207,8 @@ main {
   gap: 0.5rem;
 }
 
+/* END PROJECTS SECTION */
+
 .announcements>.container,
 .card,
 .trending>.container {
@@ -207,6 +217,8 @@ main {
   border-radius: 0.5rem;
   
 }
+
+/* ANNOUNCEMENTS */
 
 .announcements>.container {
   display: grid;
@@ -229,6 +241,9 @@ main {
 .an-head {
   font-weight: 500;
 }
+
+/* END ANNOUNCEMENTS */
+/* TRENDING */
 
 .trending {
   display: grid;
@@ -263,3 +278,5 @@ main {
 .user-project {
   color: rgb(100, 100, 100);
 }
+
+/* END TRENDING */
