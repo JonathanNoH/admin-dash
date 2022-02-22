@@ -162,6 +162,19 @@ header a {
     font-weight: 500;
 }
 
+header .name,
+header .greeting {
+  font-weight: 500;
+}
+
+.greeting .name {
+  font-size: 1.25rem;
+}
+
+.greeting .hello {
+  font-size: 0.75rem;
+}
+
 .upper {
   display: flex;
 }
